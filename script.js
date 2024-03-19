@@ -61,7 +61,10 @@ function displayQuestion(questionIndex) {
 function checkAnswer(questionIndex, userAnswer) {
   const correctAnswer = quizData.questions[questionIndex].correct_answer;
   if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+    optionsContainer.innerHTML = "";
     score++;
+  }else{
+    optionsContainer.innerHTML = "";
   }
 }
 
